@@ -86,10 +86,22 @@ public class Recursion {
         }
     }
 
-    
-
     private int sum2(int[] arr, int index, int result){
         return (index < arr.length) ? sum2(arr, index + 1, result+arr[index]) : result;
+    }
+
+    public String reverse(String str){
+        char first = str.charAt(0);
+        String reverseStr;
+
+        if(str.length() <= 1){
+            return str;
+        }
+        else {
+            String subStr = str.substring(1);
+            reverseStr = reverse(subStr);
+        }
+        return reverseStr + first;
     }
 
     public ArrayList<Integer> getDp() {

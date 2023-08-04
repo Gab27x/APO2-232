@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Recursion r = new Recursion();
 
+        System.out.println("*******************************************");
         System.out.println("Ejemplo Factorial");
         System.out.println(r.factorial(1));
         System.out.println(r.factorial(2));
@@ -13,6 +14,7 @@ public class Main {
         System.out.println(r.factorial(4));
         System.out.println(r.factorial(5));
 
+        System.out.println("*******************************************");
         System.out.println("Ejemplo Factorial DP");
         System.out.println(r.factorialDP(1));
         System.out.println(r.factorialDP(2));
@@ -20,12 +22,23 @@ public class Main {
         System.out.println(r.factorialDP(4));
         System.out.println(r.factorialDP(5));
 
+        System.out.println("*******************************************");
         System.out.println("Ejemplo Suma de elementos de un Array");
         int[] arr = {12, -1, 15, 2, 4 , 14};
         System.out.println(r.sum(arr));
 
+        System.out.println("*******************************************");
+        System.out.println("Ejemplo reverse String");
+        System.out.println(r.reverse("Abeceario"));
 
+        System.out.println("*******************************************");
         System.out.println("Ejemplo Fibonacci");
+        System.out.println(r.fibonnaci(1));
+        System.out.println(r.fibonnaci(2));
+        System.out.println(r.fibonnaci(3));
         System.out.println(r.fibonnaci(4));
+        System.out.println(r.fibonnaci(5));
+        System.out.println(r.fibonnaci(6));
+        System.out.println(r.fibonnaci(7));
     }
 }
