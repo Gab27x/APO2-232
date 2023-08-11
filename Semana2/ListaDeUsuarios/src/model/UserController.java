@@ -106,4 +106,64 @@ public class UserController {
         }
         return str;
     }
+
+    // método de activación
+    public String delete(int goal){
+        return delete(goal, this.head, null);
+    }
+
+    // método recursivo
+    private String delete(int goal, User current, User previous){
+        String str;
+
+        // Caso base: La lista esta vacia
+        if(head == null){
+            str = "lis is empty";
+        }
+        // Caso Base: El elemento no existe
+        else if(current == null){
+            str = "This element does not exist";
+        }
+        // Caso base: estamos en el nodo a eliminar
+        else if(current.getId() == goal){
+            // sub Caso Base (Caso borde)
+            if(current == this.head){
+                this.head = current.getNext(); // Actualizar el estado de la lista
+                current.setNext(null); // desconección del elemento
+            }
+            // sub Caso Base (Caso borde)
+            else if(current == tail){
+                this.tail = previous; // Actualizar el estado de la lista
+                previous.setNext(null); // desconección del elemento
+            }
+            // sub caso
+            else {
+                previous.setNext(current.getNext()); // Actualizar el estado de la lista
+                current.setNext(null); // desconección del elemento
+            }
+            str = "The user has been deleted";
+        }
+        // Caso recursivo
+        else {
+           str = delete(goal,current.getNext(), current);
+        }
+        return str;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

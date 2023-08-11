@@ -58,7 +58,9 @@ public class Main {
         }
     }
     private void deleteUser() {
-
+        System.out.println("type the id:");
+        int goal = sc.nextInt();
+        System.out.println(controller.delete(goal));
     }
 
     private void searchUser() {
