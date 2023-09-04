@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0010d19-a2c4-45d0-872f-9170d94a6cc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CircularLinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CircularLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Semana5/BST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana5/BST/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/i2t/Git/icesi/APO2-232/Semana2/DoubleLinkedList",
+    "last_opened_file_path": "/home/i2t/Git/icesi/APO2-232/semana3/CircularLinkedList",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1692793449252</updated>
       <workItem from="1692793450399" duration="1881000" />
+      <workItem from="1693833815913" duration="2024000" />
     </task>
     <servers />
   </component>

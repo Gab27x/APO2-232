@@ -78,11 +78,26 @@
       <workItem from="1693673759259" duration="2988000" />
       <workItem from="1693701046915" duration="214000" />
       <workItem from="1693750209875" duration="3612000" />
-      <workItem from="1693829095426" duration="1458000" />
+      <workItem from="1693829095426" duration="2669000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/model/BST.java</url>
+          <line>147</line>
+          <properties class="model.BST" method="addInGroup">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

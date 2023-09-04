@@ -1,5 +1,7 @@
 package model;
 
+import exception.IsEmptyCircularLinkedListException;
+
 public class CircularLinkedList {
 
     private Node head;
@@ -30,19 +32,27 @@ public class CircularLinkedList {
     }
 
     public String delete(String goal){
-        return delete(goal, this.head);
+        String msj = "";
+        try {
+            msj = delete(goal, this.head);
+        }catch (IsEmptyCircularLinkedListException exception){
+            System.out.println("the exception has been caught");
+            exception.printStackTrace();
+        }
+        return msj;
     }
 
-    // método recursivo
-    private String delete(String goal, Node current){
+    // método recursivo ---> suceptible de lanzar la excepción
+    private String delete(String goal, Node current) throws IsEmptyCircularLinkedListException {
         String str;
 
         // Caso base: La lista esta vacia
-        if(head == null){
-            str = "lis is empty";
+        if(head == null ){
+            throw new IsEmptyCircularLinkedListException("The circular Linked list is empty");
         }
         // Caso Base: El elemento no existe
-        else if(current == null){
+        // en la lista circular el valor del current nunca será null
+        else if(current == tail){
             str = "This element does not exist";
         }
         // Caso base: estamos en el nodo a eliminar
