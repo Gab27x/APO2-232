@@ -5,9 +5,9 @@ public class Node {
     private Node right;
     private Node left;
 
-    private String key;
+    private Integer key;
 
-    public Node(String key) {
+    public Node(Integer key) {
         this.key = key;
     }
 
@@ -27,15 +27,15 @@ public class Node {
         this.left = left;
     }
 
-    public String getKey() {
+    public Integer getKey() {
         return key;
     }
 
-    public void setKey(String key) {
+    public void setKey(Integer key) {
         this.key = key;
     }
 
     public String toString(){
-        return key;
+        return key+"";
     }
 }

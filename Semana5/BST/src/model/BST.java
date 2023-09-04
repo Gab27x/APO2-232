@@ -5,8 +5,12 @@ public class BST {
 
     private Node root;
 
+    public Node getRoot() {
+        return root;
+    }
+
     // trigger
-    public void add(String key){
+    public void add(Integer key){
         Node node = new Node(key);
         if(root == null){
             root = node;
@@ -48,9 +52,13 @@ public class BST {
 
     private String inOrder(Node current){
         if(current == null){
-            return " null ";
+            return "";
         }
         else {
+            // llamdo por la izquierda
+            // agregar a la lista
+            // llamado por la derecha
+            // return array
            return  inOrder(current.getLeft()) + " " + current.getKey() + " " + inOrder(current.getRight());
         }
     }
@@ -68,11 +76,11 @@ public class BST {
         }
     }
 
-    public void delete(String goal){
+    public void delete(Integer goal){
         delete(null, root, goal);
     }
 
-    private void delete(Node parent, Node current, String goal){
+    private void delete(Node parent, Node current, Integer goal){
         if(current == null){
             // el nodo no esta en el árbol
         }
@@ -128,6 +136,24 @@ public class BST {
         }
         else if(goal.compareTo(current.getKey()) > 0){
             delete(current, current.getRight(), goal);
+        }
+    }
+
+    public void addInGroup(Integer[] arr){
+        int start = 0;
+        int end = arr.length-1;
+        addInGroup(arr, start, end);
+    }
+
+    private void addInGroup(Integer[] arr, int start, int end){
+        if(start <= end){
+            int mid = (start + end)/2;
+
+            add(arr[mid]);
+            // left
+            addInGroup(arr, start, mid-1);
+            // right
+            addInGroup(arr, mid+1, end);
         }
     }
 
