@@ -1,6 +1,8 @@
 package model;
 
 import exception.IsEmptyCircularLinkedListException;
+import exception.NodeNotFoundException;
+import exception.NodeWithSameKeyException;
 
 public class CircularLinkedList {
 
@@ -19,15 +21,20 @@ public class CircularLinkedList {
         }
         // added to first position
         else {
-            // connect node
-            this.tail.setNext(node);
-            node.setPrevious(this.tail);
-            // update
-            this.tail = node;
+            if( !(this.tail.getKey().equals(node.getKey()))){
+                // connect node
+                this.tail.setNext(node);
+                node.setPrevious(this.tail);
+                // update
+                this.tail = node;
 
-            // Caso de la lista circular
-            this.head.setPrevious(tail);
-            this.tail.setNext(head);
+                // Caso de la lista circular
+                this.head.setPrevious(tail);
+                this.tail.setNext(head);
+            }
+            else {
+                throw new NodeWithSameKeyException("esta llave ya existe en la lista");
+            }
         }
     }
 
@@ -38,12 +45,14 @@ public class CircularLinkedList {
         }catch (IsEmptyCircularLinkedListException exception){
             System.out.println("the exception has been caught");
             exception.printStackTrace();
+        }catch (NodeNotFoundException ex){
+            ex.printStackTrace();
         }
         return msj;
     }
 
     // método recursivo ---> suceptible de lanzar la excepción
-    private String delete(String goal, Node current) throws IsEmptyCircularLinkedListException {
+    private String delete(String goal, Node current) throws IsEmptyCircularLinkedListException, NodeNotFoundException{
         String str;
 
         // Caso base: La lista esta vacia
@@ -53,7 +62,7 @@ public class CircularLinkedList {
         // Caso Base: El elemento no existe
         // en la lista circular el valor del current nunca será null
         else if(current == tail){
-            str = "This element does not exist";
+            throw new NodeNotFoundException("This element does not exist");
         }
         // Caso base: estamos en el nodo a eliminar
         else if(current.getKey().equals(goal)){

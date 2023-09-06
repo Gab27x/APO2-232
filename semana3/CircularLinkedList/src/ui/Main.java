@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         CircularLinkedList circular = new CircularLinkedList();
 
+        circular.delete("10");
+
+        circular.addNode(new Node("0"));
         circular.addNode(new Node("0"));
         circular.addNode(new Node("1"));
         circular.addNode(new Node("2"));
