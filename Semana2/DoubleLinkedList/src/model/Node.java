@@ -1,11 +1,11 @@
 package model;
 
-public class Node {
+public class Node<T extends Comparable<T>> {
     private Node next;
     private Node previous;
-    private String key;
+    private T key;
 
-    public Node(String key){
+    public Node(T key){
         this.key = key;
     }
 
@@ -25,11 +25,11 @@ public class Node {
         this.previous = previous;
     }
 
-    public String getKey() {
+    public T getKey() {
         return key;
     }
 
-    public void setKey(String key) {
+    public void setKey(T key) {
         this.key = key;
     }
 }

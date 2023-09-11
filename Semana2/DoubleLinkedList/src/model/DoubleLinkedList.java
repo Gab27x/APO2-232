@@ -1,10 +1,10 @@
 package model;
 
-public class DoubleLinkedList {
-    private Node head;
-    private Node tail;
+public class DoubleLinkedList<T extends Comparable<T>> {
+    private Node<T> head;
+    private Node<T> tail;
 
-    public void addLastUser(Node node){
+    public void addLastUser(Node<T> node){
 
         // list is empty
         if(this.head == null){
@@ -21,12 +21,12 @@ public class DoubleLinkedList {
         }
     }
 
-    public String delete(String goal){
+    public String delete(T goal){
         return delete(goal, this.head);
     }
 
     // método recursivo
-    private String delete(String goal, Node current){
+    private String delete(T goal, Node<T> current){
         String str;
 
         // Caso base: La lista esta vacia
@@ -38,7 +38,7 @@ public class DoubleLinkedList {
             str = "This element does not exist";
         }
         // Caso base: estamos en el nodo a eliminar
-        else if(current.getKey().equals(goal)){
+        else if(current.getKey().compareTo(goal) == 0){
             // sub Caso Base (Caso borde)
             if(current == this.head){
                 this.head = current.getNext(); // Actualizar el estado de la lista
