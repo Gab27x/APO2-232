@@ -9,6 +9,14 @@ public class CircularLinkedList {
     private Node head;
     private Node tail;
 
+    public Node getHead() {
+        return head;
+    }
+
+    public Node getTail() {
+        return tail;
+    }
+
     public void addNode(Node node){
 
         // list is empty
@@ -21,21 +29,28 @@ public class CircularLinkedList {
         }
         // added to first position
         else {
-            if( !(this.tail.getKey().equals(node.getKey()))){
-                // connect node
-                this.tail.setNext(node);
-                node.setPrevious(this.tail);
-                // update
-                this.tail = node;
-
-                // Caso de la lista circular
-                this.head.setPrevious(tail);
-                this.tail.setNext(head);
-            }
-            else {
-                throw new NodeWithSameKeyException("esta llave ya existe en la lista");
-            }
+            addNode(this.head, node);
         }
+    }
+
+    private void addNode(Node current, Node node){
+        if(current.getKey().equals(node.getKey())){
+            throw new NodeWithSameKeyException("esta llave ya existe en la lista");
+        }
+        else if(current == this.tail){
+           // connect node
+           this.tail.setNext(node);
+           node.setPrevious(this.tail);
+           // update
+           this.tail = node;
+
+           // Caso de la lista circular
+           this.head.setPrevious(tail);
+           this.tail.setNext(head);
+       }
+       else {
+           addNode(current.getNext(), node);
+       }
     }
 
     public String delete(String goal){
@@ -52,7 +67,7 @@ public class CircularLinkedList {
     }
 
     // método recursivo ---> suceptible de lanzar la excepción
-    private String delete(String goal, Node current) throws IsEmptyCircularLinkedListException, NodeNotFoundException{
+    public String delete(String goal, Node current) throws IsEmptyCircularLinkedListException, NodeNotFoundException{
         String str;
 
         // Caso base: La lista esta vacia
