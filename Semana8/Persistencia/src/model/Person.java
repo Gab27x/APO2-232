@@ -1,9 +1,12 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Person {
     private String name;
     private String id;
     private int years;
+    private Pet pet;
 
     public Person(String name, String id, int years) {
         this.name = name;
@@ -35,7 +38,15 @@ public class Person {
         this.years = years;
     }
 
+    public Pet getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
+
     public String toString(){
-        return "Name: " + this.name + " id: " + this.id + " years: " + this.years;
+        return "Name: " + this.name + " id: " + this.id + " years: " + this.years + " Pet: " + this.pet;
     }
 }

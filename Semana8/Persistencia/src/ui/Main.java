@@ -2,6 +2,7 @@ package ui;
 
 import model.Person;
 import model.PersonList;
+import model.Pet;
 
 import javax.imageio.IIOException;
 import java.io.FileNotFoundException;
@@ -35,6 +36,14 @@ public class Main {
         Person p6 = new Person("name6", "123", 60);
         Person p7 = new Person("name7", "123", 70);
 
+        p1.setPet(new Pet("pet2", 20));
+        p2.setPet(new Pet("pet3", 30));
+        p3.setPet(new Pet("pet4", 40));
+        p4.setPet(new Pet("pet5", 50));
+        p5.setPet(new Pet("pet6", 60));
+        p6.setPet(new Pet("pet7", 70));
+        p7.setPet(new Pet("pet8", 80));
+
         m.listToSave.getPeople().add(p1);
         m.listToSave.getPeople().add(p2);
         m.listToSave.getPeople().add(p3);
@@ -61,6 +70,24 @@ public class Main {
         }
 
         System.out.println("Lista cargada");
+        System.out.println(m.listToLoad.print());
+
+
+        System.out.println("Ejemplo Json");
+        try {
+            m.listToSave.saveToJson();
+        } catch (IOException e) {
+           e.printStackTrace();
+        }
+
+        try {
+            System.out.println("información del content: ");
+            m.listToLoad.loadFromJson();
+        } catch (IOException e) {
+           e.printStackTrace();
+        }
+
+        System.out.println("peole from list to load ");
         System.out.println(m.listToLoad.print());
     }
 }

@@ -2,7 +2,13 @@ package model;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import javax.swing.plaf.SpinnerUI;
 
 public class PersonList {
 
@@ -10,12 +16,15 @@ public class PersonList {
     private File dataFolder;
     private File result;
 
+    private File jsonFile;
+
     public PersonList() {
         people = new ArrayList<>();
         // la ruta absoluta del proyecto
         File projectDir = new File(System.getProperty("user.dir"));
         dataFolder = new File(projectDir+"/data");
         result = new File(dataFolder+"/result.csv");
+        jsonFile = new File(dataFolder+"/people.json");
     }
 
     private void createResources() throws IOException {
@@ -23,6 +32,9 @@ public class PersonList {
             dataFolder.mkdir();
             if(!result.exists()){
                 result.createNewFile();
+            }
+            if (!jsonFile.exists()){
+                jsonFile.createNewFile();
             }
         }
     }
@@ -60,6 +72,46 @@ public class PersonList {
            people.add(new Person(arr[0], arr[1], Integer.parseInt(arr[2])));
         }
         reader.close();
+    }
+
+    public void saveToJson() throws IOException {
+        // crear los recursos --> archivos y carpetas
+        createResources();
+
+        // Serializador de la información --> https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1
+        Gson gson = new Gson();
+
+        // result --> funte de la información (archivo)
+        // FileOutputStream --> Enlazador de la información --> conectar el lenguaje (java) con la fuente de la información
+        FileOutputStream fos = new FileOutputStream(jsonFile); // FileNotFountException
+
+        // fuente de la información
+        // Definir el formato con el que se guarda la información
+        String data = gson.toJson(people);
+
+        // OutputStreamWriter --> empaquetador de la información --> preparar el recurso donde queremos escribir
+        // BufferedWriter --> escritor de la información
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fos));
+        writer.write(data); // IOException
+        writer.flush();
+        writer.close();
+    }
+
+    public void loadFromJson() throws IOException {
+        Gson gson = new Gson();
+        FileInputStream fis = new FileInputStream(jsonFile);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+
+        String content = "";
+        String line = "";
+        while ( (line = reader.readLine()) != null){
+            content += line;
+        }
+        reader.close();
+
+        Person[] persons = gson.fromJson(content, Person[].class);
+        people = Arrays.asList(persons);
+
     }
 
     public List<Person> getPeople() {
