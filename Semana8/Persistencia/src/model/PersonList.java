@@ -12,7 +12,7 @@ import javax.swing.plaf.SpinnerUI;
 
 public class PersonList {
 
-    private List<Person> people;
+    private ArrayList<Person> people;
     private File dataFolder;
     private File result;
 
@@ -50,7 +50,7 @@ public class PersonList {
         // Definir el formato con el que se guarda la información
         String data = "";
         for (int i = 0; i < people.size(); i++) {
-            data += people.get(i).getName() + "," + people.get(i).getId() + "," + people.get(i).getYears() + "\n";
+            data = people.get(i).getName() + "," + people.get(i).getId() + "," + people.get(i).getYears() + "\n";
         }
         // OutputStreamWriter --> empaquetador de la información --> preparar el recurso donde queremos escribir
         // BufferedWriter --> escritor de la información
@@ -110,8 +110,21 @@ public class PersonList {
         reader.close();
 
         Person[] persons = gson.fromJson(content, Person[].class);
-        people = Arrays.asList(persons);
+        people = gson.fromJson(content, people.getClass());
+        // people = Arrays.asList(persons);
 
+    }
+
+    public void listDirs(){
+        File[] files = dataFolder.listFiles();
+        for (int i = 0; i < files.length; i++) {
+            System.out.println(files[i].getName());
+            // retorna un objeto file identico a dataFolder
+            System.out.println(files[i].getParentFile().getName());
+            // retorna un string con la ruta absoluta de la carpeta que lo contiene
+            System.out.println(files[i].getParent());
+
+        }
     }
 
     public List<Person> getPeople() {

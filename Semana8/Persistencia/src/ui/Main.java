@@ -21,6 +21,8 @@ public class Main {
         Main m = new Main();
 
         // ruta absoluta --> /home/i2t/Git/icesi/APO2-232/Semana8/Persistencia
+        // ruta absoluta --> C:\\user\\i2t\\Documents\\icesi\\APO2-232\\Semana8\\Persistencia
+
         // ruta relativa --> ./Persistencia
 
         // Formas de las rutas absolutas:
@@ -89,5 +91,8 @@ public class Main {
 
         System.out.println("peole from list to load ");
         System.out.println(m.listToLoad.print());
+
+
+        m.listToSave.listDirs();
     }
 }

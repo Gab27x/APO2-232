@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0010d19-a2c4-45d0-872f-9170d94a6cc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/.idea/libraries/gson_2_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/data/people.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/Pet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana7/Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana7/Testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/Persistencia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/Persistencia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/data/result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/data/result.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/PersonList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/PersonList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/ui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/PersonList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/PersonList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/ui/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="d0010d19-a2c4-45d0-872f-9170d94a6cc5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,6 +153,7 @@
       <workItem from="1694606989326" duration="5220000" />
       <workItem from="1694994439544" duration="96000" />
       <workItem from="1695217989609" duration="985000" />
+      <workItem from="1695643407336" duration="81000" />
     </task>
     <servers />
   </component>
