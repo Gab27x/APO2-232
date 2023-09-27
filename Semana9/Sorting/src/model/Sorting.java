@@ -2,21 +2,17 @@ package model;
 
 import java.util.ArrayList;
 
-public class Sorting {
+public class Sorting<T extends Comparable<T>> {
 
-    private ArrayList<Person> listToSort;
+    public Sorting(){ }
 
-    public Sorting(ArrayList<Person> listToSort){
-        this.listToSort = listToSort;
-    }
-
-    public ArrayList<Person> selectionSort(){
+    public ArrayList<T> selectionSort(ArrayList<T> listToSort){
         int n = listToSort.size();
         for (int i = 0; i < n - 1 ; i++) {
             for (int j = i+1; j < n; j++) {
                if(listToSort.get(i).compareTo(listToSort.get(j)) > 0){
-                   Person prev = listToSort.get(i);
-                   Person current = listToSort.get(j);
+                   T prev = listToSort.get(i);
+                   T current = listToSort.get(j);
                    listToSort.set(i , current);
                    listToSort.set(j, prev);
                }

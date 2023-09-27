@@ -15,7 +15,6 @@ public class PersonList {
     private ArrayList<Person> people;
     private File dataFolder;
     private File result;
-
     private File jsonFile;
 
     public PersonList() {
@@ -127,7 +126,7 @@ public class PersonList {
         }
     }
 
-    public List<Person> getPeople() {
+    public ArrayList<Person> getPeople() {
         return people;
     }
 

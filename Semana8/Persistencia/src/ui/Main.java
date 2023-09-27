@@ -1,5 +1,6 @@
 package ui;
 
+import model.FileManager;
 import model.Person;
 import model.PersonList;
 import model.Pet;
@@ -17,7 +18,7 @@ public class Main {
         listToLoad = new PersonList();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         Main m = new Main();
 
         // ruta absoluta --> /home/i2t/Git/icesi/APO2-232/Semana8/Persistencia
@@ -94,5 +95,13 @@ public class Main {
 
 
         m.listToSave.listDirs();
+
+
+        FileManager fileManager = FileManager.getInstance();
+        try {
+            fileManager.saveToJson(m.listToSave.getPeople());
+        } catch (IOException e) {
+           e.printStackTrace();
+        }
     }
 }
