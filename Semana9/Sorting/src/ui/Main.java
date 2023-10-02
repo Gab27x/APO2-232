@@ -50,5 +50,22 @@ public class Main {
             System.out.println(list.get(i));
         }
 
+        System.out.println("**************");
+        ArrayList<Integer> nums = new ArrayList<>();
+        nums.add(7);
+        nums.add(4);
+        nums.add(3);
+        nums.add(12);
+        nums.add(13);
+        nums.add(-2);
+
+        ArrayList<Integer> numsSorted = sorting.insertionSort(nums);
+
+        for (int i = 0; i < numsSorted.size(); i++) {
+            System.out.print(numsSorted.get(i) + " ");
+        }
+
+
+
     }
 }
