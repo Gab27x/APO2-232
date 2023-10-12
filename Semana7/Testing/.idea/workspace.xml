@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f56a5bb0-7964-4639-9b03-339354790aaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/.idea/libraries/gson_2_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/data/people.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/Pet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/Persistencia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/Persistencia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/data/result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/data/result.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/PersonList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/model/PersonList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/out/production/Persistencia/ui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/PersonList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/model/PersonList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semana8/Persistencia/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana8/Persistencia/src/ui/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="f56a5bb0-7964-4639-9b03-339354790aaf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,24 +29,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/i2t/Git/icesi/APO2-232/Semana2/DoubleLinkedList",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TestCalculator.testFactorialNegativeCase">
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestCalculator">
     <configuration name="TestCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testing" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCalculator.testFactorialNegativeCase" />
         <item itemvalue="JUnit.TestCalculator" />
+        <item itemvalue="JUnit.TestCalculator.testFactorialNegativeCase" />
         <item itemvalue="JUnit.TestCalculator.testFactorialOfFiveValue" />
         <item itemvalue="JUnit.TestCalculator.testFactorialOfZeroValue" />
       </list>
@@ -120,6 +110,7 @@
       <workItem from="1694436156348" duration="3822000" />
       <workItem from="1694606979442" duration="8000" />
       <workItem from="1695217953482" duration="35000" />
+      <workItem from="1696969337290" duration="708000" />
     </task>
     <servers />
   </component>

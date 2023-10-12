@@ -49,7 +49,7 @@ public class PersonList {
         // Definir el formato con el que se guarda la información
         String data = "";
         for (int i = 0; i < people.size(); i++) {
-            data = people.get(i).getName() + "," + people.get(i).getId() + "," + people.get(i).getYears() + "\n";
+            data += people.get(i).getName() + "," + people.get(i).getId() + "," + people.get(i).getYears() + "\n";
         }
         // OutputStreamWriter --> empaquetador de la información --> preparar el recurso donde queremos escribir
         // BufferedWriter --> escritor de la información
@@ -108,7 +108,7 @@ public class PersonList {
         }
         reader.close();
 
-        Person[] persons = gson.fromJson(content, Person[].class);
+        //Person[] persons = gson.fromJson(content, Person[].class);
         people = gson.fromJson(content, people.getClass());
         // people = Arrays.asList(persons);
 

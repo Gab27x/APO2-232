@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0010d19-a2c4-45d0-872f-9170d94a6cc5" name="Changes" comment="" />
+    <list default="true" id="d0010d19-a2c4-45d0-872f-9170d94a6cc5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Semana2/DoubleLinkedList/test/model/DoubleLinkendListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Semana2/DoubleLinkedList/.idea/DoubleLinkedList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana2/DoubleLinkedList/.idea/DoubleLinkedList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Semana7/Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana7/Testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Semana7/Testing/Testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana7/Testing/Testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Semana7/Testing/src/model/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semana7/Testing/src/model/Calculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,26 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/i2t/Workspace/java/LinkendList&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/i2t/Git/icesi/APO2-232/Semana8/Persistencia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CircularLinkedListTest.deleteTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.CircularLinkedListTest.addExistNodeTestV2">
     <configuration name="CircularLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CircularLinkedList" />
       <extension name="coverage">
@@ -130,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CircularLinkedListTest.deleteTest" />
-        <item itemvalue="JUnit.CircularLinkedListTest.deleteInEmptyList" />
-        <item itemvalue="JUnit.CircularLinkedListTest" />
         <item itemvalue="JUnit.CircularLinkedListTest.addExistNodeTestV2" />
         <item itemvalue="JUnit.CircularLinkedListTest.addExistNodeTest" />
+        <item itemvalue="JUnit.CircularLinkedListTest.deleteInEmptyList" />
+        <item itemvalue="JUnit.CircularLinkedListTest" />
+        <item itemvalue="JUnit.CircularLinkedListTest.deleteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +160,7 @@
       <workItem from="1694994439544" duration="96000" />
       <workItem from="1695217989609" duration="985000" />
       <workItem from="1695643407336" duration="81000" />
+      <workItem from="1696970233233" duration="541000" />
     </task>
     <servers />
   </component>
