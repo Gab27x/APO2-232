@@ -26,5 +26,9 @@ public class Main {
         m.tree.addInGroup(arr);
 
         System.out.println(m.tree.inOrder());
+
+        System.out.printf(m.tree.getDepth(m.tree.getRoot(), 0) + "");
+
+
     }
 }
