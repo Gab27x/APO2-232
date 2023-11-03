@@ -92,4 +92,7 @@ public class Avatar {
         }
     }
 
+    public Vector getPosition() {
+        return position;
+    }
 }
